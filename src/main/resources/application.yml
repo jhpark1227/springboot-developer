@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+  security.oauth2.client.registration:
+    google:
+      client-id: 276780974159-9k47e2t6tkj4br8drjuioo3tievq4nv4.apps.googleusercontent.com
+      client-secret: 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
+      scope:
+        - email
+        - profile
+logging.level:
+  org.hibernate:
+    SQL: debug
+    #orm.jdbc.bind: trace
+jwt:
+  issuer: junhyeok0246@naver.com
+  secret_key: study-springboot
